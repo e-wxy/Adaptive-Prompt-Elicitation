@@ -1,0 +1,30 @@
+# Core dependencies
+anthropic>=0.40.0
+openai>=1.50.0
+fal-client>=0.5.0
+python-dotenv>=1.0.0
+numpy>=1.26.0
+pandas>=2.0.0
+Pillow>=10.0.0
+requests>=2.31.0
+json-repair>=0.3.0
+python-json-logger>=2.0.0
+termcolor>=2.3.0
+
+# For the demo (optional)
+# Jupyter notebook
+ipykernel>=7.2.0
+# Web interface
+# flask>=2.0.0     
+# flask_cors>=3.0.0
+
+
+# Evaluation metrics (optional — only needed to run eval.py)
+# torch>=2.0.0
+# torchvision>=0.15.0
+# transformers>=4.35.0
+# dreamsim>=0.1.0
+
+# Optional LLM providers
+# google-genai>=0.8.0          # Google Gemini / Imagen
+# google-cloud-aiplatform>=1.50.0  # Vertex AI

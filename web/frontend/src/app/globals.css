@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  color: #111827;
+}
+
+/* Spinner components */
+.spinner-ring {
+  border: 3px solid rgba(0, 0, 0, 0.12);
+  border-top-color: #555;
+  border-radius: 50%;
+  animation: spin 0.75s linear infinite;
+}
+
+.spinner-bar {
+  background: linear-gradient(90deg, transparent, #729465, transparent);
+  background-size: 200% 100%;
+  border-radius: 2px;
+  animation: slide 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes slide {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}

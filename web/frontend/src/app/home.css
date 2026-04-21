@@ -1,0 +1,204 @@
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+}
+
+.home-content {
+  width: 100%;
+  max-width: 42rem;
+}
+
+.home-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: 0.025em;
+  line-height: 1.2;
+}
+
+.home-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.type-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.type-label {
+  font-weight: 500;
+}
+
+.combobox-wrapper {
+  position: relative;
+}
+
+.combobox-input-row {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5d9;
+  border-radius: 0.5rem;
+  background-color: white;
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+
+.combobox-input-row:focus-within {
+  border-color: #c6ccd0;
+}
+
+.combobox-input {
+  padding: 0.4rem 0.6rem 0.4rem 0.75rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+  min-width: 12rem;
+  flex: 1;
+}
+
+.combobox-arrow {
+  padding: 0 0.6rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #555;
+  font-size: 0.8rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.combobox-list {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin: 0;
+  padding: 0.3rem 0;
+  z-index: 50;
+  max-height: 16rem;
+  overflow-y: auto;
+}
+
+.combobox-item {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.combobox-item:hover,
+.combobox-item.selected {
+  background-color: #f3f4f6;
+}
+
+.combobox-item.selected {
+  font-weight: 600;
+}
+
+.combobox-item-custom {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 0.2rem;
+  padding-top: 0.5rem;
+}
+
+.combobox-custom-hint {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.home-input {
+  width: 100%;
+  height: 8rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1.6rem;
+  border: none;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  outline: none;
+  resize: none;
+  transition: box-shadow 0.2s;
+}
+
+.home-input:focus {
+  box-shadow: 0 0 0 3px rgba(107, 114, 128, 0.15);
+}
+
+.home-input::placeholder {
+  color: #9ca3af;
+}
+
+.start-button {
+  padding: 0.875rem 2.5rem;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 10rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+.start-button:hover:not(:disabled) {
+  background-color: #1f2937;
+  transform: scale(1.02);
+}
+
+.start-button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.examples {
+  text-align: center;
+}
+
+.examples-label {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.examples-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.example-chip {
+  padding: 0.4rem 0.9rem;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.example-chip:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+  color: #374151;
+}
