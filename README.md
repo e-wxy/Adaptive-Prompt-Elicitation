@@ -94,6 +94,8 @@ cd web/frontend && npm install && npm run dev
 
 Open [http://localhost:3000](http://localhost:3000), enter a design type and a short description, and APE will interactively guide you through visual queries to refine the generated image.
 
+![Prototype UI](./figures/UI.png)
+
 
 ## Repository Structure
 
